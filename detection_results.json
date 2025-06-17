@@ -1,0 +1,124 @@
+{
+  "template_matches": [
+    {
+      "x": 120,
+      "y": 80,
+      "width": 40,
+      "height": 60,
+      "confidence": 1.0,
+      "method": "template_matching"
+    },
+    {
+      "x": 520,
+      "y": 80,
+      "width": 40,
+      "height": 60,
+      "confidence": 1.0,
+      "method": "template_matching"
+    },
+    {
+      "x": 720,
+      "y": 80,
+      "width": 40,
+      "height": 60,
+      "confidence": 1.0,
+      "method": "template_matching"
+    },
+    {
+      "x": 920,
+      "y": 80,
+      "width": 40,
+      "height": 60,
+      "confidence": 0.9999997019767761,
+      "method": "template_matching"
+    },
+    {
+      "x": 320,
+      "y": 80,
+      "width": 40,
+      "height": 60,
+      "confidence": 0.9999980926513672,
+      "method": "template_matching"
+    },
+    {
+      "x": 449,
+      "y": 669,
+      "width": 40,
+      "height": 60,
+      "confidence": 0.9736397862434387,
+      "method": "template_matching"
+    },
+    {
+      "x": 749,
+      "y": 669,
+      "width": 40,
+      "height": 60,
+      "confidence": 0.9736397862434387,
+      "method": "template_matching"
+    },
+    {
+      "x": 149,
+      "y": 669,
+      "width": 40,
+      "height": 60,
+      "confidence": 0.9120405912399292,
+      "method": "template_matching"
+    },
+    {
+      "x": 1049,
+      "y": 669,
+      "width": 40,
+      "height": 60,
+      "confidence": 0.8338935971260071,
+      "method": "template_matching"
+    },
+    {
+      "x": 450,
+      "y": 350,
+      "width": 40,
+      "height": 60,
+      "confidence": 0.7649204134941101,
+      "method": "template_matching"
+    },
+    {
+      "x": 349,
+      "y": 149,
+      "width": 40,
+      "height": 60,
+      "confidence": 0.7403256297111511,
+      "method": "template_matching"
+    }
+  ],
+  "azure_detections": {
+    "metadata": {
+      "width": 1200,
+      "height": 800,
+      "model_version": "2023-10-01"
+    },
+    "objects": [],
+    "tags": [
+      {
+        "name": "diagram",
+        "confidence": 0.9261987209320068
+      },
+      {
+        "name": "square",
+        "confidence": 0.8498638868331909
+      },
+      {
+        "name": "plan",
+        "confidence": 0.8479601144790649
+      },
+      {
+        "name": "rectangle",
+        "confidence": 0.8461741209030151
+      }
+    ],
+    "architectural_objects": []
+  },
+  "summary": {
+    "template_matches_count": 11,
+    "azure_objects_count": 0,
+    "azure_architectural_count": 0
+  }
+}

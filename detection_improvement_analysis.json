@@ -1,0 +1,44 @@
+{
+  "analysis_date": "2025-06-16 20:30:54",
+  "methods_compared": {
+    "basic": "Basic template matching (single rotation)",
+    "enhanced": "Multi-rotation + multi-threshold + template variations",
+    "ultimate": "Multi-threshold + region-adaptive + advanced NMS"
+  },
+  "detection_counts": {
+    "basic": 11,
+    "enhanced": 21,
+    "ultimate": 21
+  },
+  "improvements": {
+    "enhanced_vs_basic": "90.9%",
+    "ultimate_vs_basic": "90.9%"
+  },
+  "rotation_coverage": {
+    "basic": 1,
+    "enhanced": 5,
+    "ultimate": 5
+  },
+  "confidence_stats": {
+    "basic": {
+      "min": 0.7403256297111511,
+      "max": 1.0,
+      "avg": 0.9271325089714744
+    },
+    "enhanced": {
+      "min": 0.7134928107261658,
+      "max": 1.0,
+      "avg": 0.933696156456357
+    },
+    "ultimate": {
+      "min": 0.7134928107261658,
+      "max": 1.0,
+      "avg": 0.9336965424673898
+    }
+  },
+  "performance": {
+    "basic_time": 0.043210744857788086,
+    "enhanced_time": 101.3782250881195,
+    "ultimate_time": 133.14282298088074
+  }
+}
