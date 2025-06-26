@@ -1,0 +1,386 @@
+{
+  "blueprint_path": "images/blueprints/blueprint_with_doors.png",
+  "reference_path": "images/templates/door_icon.png",
+  "reference_embedding_shape": [
+    1536
+  ],
+  "window_size": [
+    60,
+    60
+  ],
+  "stride": 30,
+  "similarity_threshold": 0.85,
+  "raw_detections": 41,
+  "final_detections": 41,
+  "detections": [
+    {
+      "x": 450,
+      "y": 660,
+      "width": 60,
+      "height": 60,
+      "confidence": 0.9565972321478049,
+      "center_x": 480,
+      "center_y": 690
+    },
+    {
+      "x": 750,
+      "y": 660,
+      "width": 60,
+      "height": 60,
+      "confidence": 0.9565972321478049,
+      "center_x": 780,
+      "center_y": 690
+    },
+    {
+      "x": 510,
+      "y": 90,
+      "width": 60,
+      "height": 60,
+      "confidence": 0.9563717569770688,
+      "center_x": 540,
+      "center_y": 120
+    },
+    {
+      "x": 120,
+      "y": 90,
+      "width": 60,
+      "height": 60,
+      "confidence": 0.9547906287371927,
+      "center_x": 150,
+      "center_y": 120
+    },
+    {
+      "x": 720,
+      "y": 90,
+      "width": 60,
+      "height": 60,
+      "confidence": 0.9547906287371927,
+      "center_x": 750,
+      "center_y": 120
+    },
+    {
+      "x": 120,
+      "y": 60,
+      "width": 60,
+      "height": 60,
+      "confidence": 0.9536567160318715,
+      "center_x": 150,
+      "center_y": 90
+    },
+    {
+      "x": 720,
+      "y": 60,
+      "width": 60,
+      "height": 60,
+      "confidence": 0.9536567160318715,
+      "center_x": 750,
+      "center_y": 90
+    },
+    {
+      "x": 510,
+      "y": 60,
+      "width": 60,
+      "height": 60,
+      "confidence": 0.9524995548041268,
+      "center_x": 540,
+      "center_y": 90
+    },
+    {
+      "x": 300,
+      "y": 60,
+      "width": 60,
+      "height": 60,
+      "confidence": 0.9517675679749885,
+      "center_x": 330,
+      "center_y": 90
+    },
+    {
+      "x": 900,
+      "y": 60,
+      "width": 60,
+      "height": 60,
+      "confidence": 0.9517675679749885,
+      "center_x": 930,
+      "center_y": 90
+    },
+    {
+      "x": 300,
+      "y": 90,
+      "width": 60,
+      "height": 60,
+      "confidence": 0.9504679316718646,
+      "center_x": 330,
+      "center_y": 120
+    },
+    {
+      "x": 900,
+      "y": 90,
+      "width": 60,
+      "height": 60,
+      "confidence": 0.9504679316718646,
+      "center_x": 930,
+      "center_y": 120
+    },
+    {
+      "x": 150,
+      "y": 690,
+      "width": 60,
+      "height": 60,
+      "confidence": 0.9450450346549415,
+      "center_x": 180,
+      "center_y": 720
+    },
+    {
+      "x": 450,
+      "y": 690,
+      "width": 60,
+      "height": 60,
+      "confidence": 0.9450450346549415,
+      "center_x": 480,
+      "center_y": 720
+    },
+    {
+      "x": 750,
+      "y": 690,
+      "width": 60,
+      "height": 60,
+      "confidence": 0.9450450346549415,
+      "center_x": 780,
+      "center_y": 720
+    },
+    {
+      "x": 450,
+      "y": 360,
+      "width": 60,
+      "height": 60,
+      "confidence": 0.8973375651414064,
+      "center_x": 480,
+      "center_y": 390
+    },
+    {
+      "x": 1050,
+      "y": 270,
+      "width": 60,
+      "height": 60,
+      "confidence": 0.8931797268862843,
+      "center_x": 1080,
+      "center_y": 300
+    },
+    {
+      "x": 90,
+      "y": 630,
+      "width": 60,
+      "height": 60,
+      "confidence": 0.8842007485471274,
+      "center_x": 120,
+      "center_y": 660
+    },
+    {
+      "x": 330,
+      "y": 60,
+      "width": 60,
+      "height": 60,
+      "confidence": 0.8825882700400826,
+      "center_x": 360,
+      "center_y": 90
+    },
+    {
+      "x": 930,
+      "y": 60,
+      "width": 60,
+      "height": 60,
+      "confidence": 0.8825882700400826,
+      "center_x": 960,
+      "center_y": 90
+    },
+    {
+      "x": 1050,
+      "y": 120,
+      "width": 60,
+      "height": 60,
+      "confidence": 0.8786535648320052,
+      "center_x": 1080,
+      "center_y": 150
+    },
+    {
+      "x": 1050,
+      "y": 420,
+      "width": 60,
+      "height": 60,
+      "confidence": 0.8786535648320052,
+      "center_x": 1080,
+      "center_y": 450
+    },
+    {
+      "x": 120,
+      "y": 420,
+      "width": 60,
+      "height": 60,
+      "confidence": 0.8778933631074515,
+      "center_x": 150,
+      "center_y": 450
+    },
+    {
+      "x": 1080,
+      "y": 270,
+      "width": 60,
+      "height": 60,
+      "confidence": 0.87640137739902,
+      "center_x": 1110,
+      "center_y": 300
+    },
+    {
+      "x": 120,
+      "y": 690,
+      "width": 60,
+      "height": 60,
+      "confidence": 0.8742797815261645,
+      "center_x": 150,
+      "center_y": 720
+    },
+    {
+      "x": 420,
+      "y": 690,
+      "width": 60,
+      "height": 60,
+      "confidence": 0.8742797815261645,
+      "center_x": 450,
+      "center_y": 720
+    },
+    {
+      "x": 720,
+      "y": 690,
+      "width": 60,
+      "height": 60,
+      "confidence": 0.8742797815261645,
+      "center_x": 750,
+      "center_y": 720
+    },
+    {
+      "x": 240,
+      "y": 240,
+      "width": 60,
+      "height": 60,
+      "confidence": 0.8704572462300241,
+      "center_x": 270,
+      "center_y": 270
+    },
+    {
+      "x": 120,
+      "y": 120,
+      "width": 60,
+      "height": 60,
+      "confidence": 0.8677171767531096,
+      "center_x": 150,
+      "center_y": 150
+    },
+    {
+      "x": 90,
+      "y": 420,
+      "width": 60,
+      "height": 60,
+      "confidence": 0.8650734367780906,
+      "center_x": 120,
+      "center_y": 450
+    },
+    {
+      "x": 330,
+      "y": 90,
+      "width": 60,
+      "height": 60,
+      "confidence": 0.8635143056634932,
+      "center_x": 360,
+      "center_y": 120
+    },
+    {
+      "x": 930,
+      "y": 90,
+      "width": 60,
+      "height": 60,
+      "confidence": 0.8635143056634932,
+      "center_x": 960,
+      "center_y": 120
+    },
+    {
+      "x": 1080,
+      "y": 120,
+      "width": 60,
+      "height": 60,
+      "confidence": 0.8621647703933507,
+      "center_x": 1110,
+      "center_y": 150
+    },
+    {
+      "x": 1080,
+      "y": 420,
+      "width": 60,
+      "height": 60,
+      "confidence": 0.8621647703933507,
+      "center_x": 1110,
+      "center_y": 450
+    },
+    {
+      "x": 120,
+      "y": 390,
+      "width": 60,
+      "height": 60,
+      "confidence": 0.859724608456345,
+      "center_x": 150,
+      "center_y": 420
+    },
+    {
+      "x": 90,
+      "y": 120,
+      "width": 60,
+      "height": 60,
+      "confidence": 0.8577064251057963,
+      "center_x": 120,
+      "center_y": 150
+    },
+    {
+      "x": 420,
+      "y": 660,
+      "width": 60,
+      "height": 60,
+      "confidence": 0.8572884834713984,
+      "center_x": 450,
+      "center_y": 690
+    },
+    {
+      "x": 720,
+      "y": 660,
+      "width": 60,
+      "height": 60,
+      "confidence": 0.8572884834713984,
+      "center_x": 750,
+      "center_y": 690
+    },
+    {
+      "x": 90,
+      "y": 390,
+      "width": 60,
+      "height": 60,
+      "confidence": 0.8536270459337009,
+      "center_x": 120,
+      "center_y": 420
+    },
+    {
+      "x": 840,
+      "y": 420,
+      "width": 60,
+      "height": 60,
+      "confidence": 0.8536270459337009,
+      "center_x": 870,
+      "center_y": 450
+    },
+    {
+      "x": 540,
+      "y": 60,
+      "width": 60,
+      "height": 60,
+      "confidence": 0.8514942050778013,
+      "center_x": 570,
+      "center_y": 90
+    }
+  ]
+}

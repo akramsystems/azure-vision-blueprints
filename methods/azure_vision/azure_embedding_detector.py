@@ -21,7 +21,7 @@ class AzureEmbeddingDetector:
     
     def __init__(self):
         """Initialize detector"""
-        self.endpoint = "https://quoto-measurement-detecti-wsmaj.eastus.inference.ml.azure.com/score"
+        self.endpoint = os.environ.get('VISION_DINO_V2_ENDPOINT', 'https://quoto-measurement-detecti-wsmaj.eastus.inference.ml.azure.com/score')
         self.headers = {
             "Content-Type": "application/json",
             "Authorization": f"Bearer {os.environ.get('VISION_DINO_V2_KEY', '')}"

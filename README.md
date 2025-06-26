@@ -47,6 +47,10 @@ CUSTOM_VISION_TRAINING_KEY=your_training_key
 CUSTOM_VISION_PREDICTION_KEY=your_prediction_key
 CUSTOM_VISION_ENDPOINT=your_custom_vision_endpoint
 CUSTOM_VISION_PROJECT_ID=your_project_id
+
+# DinoV2 Embedding Configuration (optional)
+VISION_DINO_V2_KEY=your_azure_ml_dinov2_key
+VISION_DINO_V2_ENDPOINT=your_azure_ml_dinov2_endpoint
 ```
 
 ### 3. Run the Demo
