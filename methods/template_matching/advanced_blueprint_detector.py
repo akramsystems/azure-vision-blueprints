@@ -19,7 +19,7 @@ import numpy as np
 import json
 from typing import List, Dict, Tuple
 from dotenv import load_dotenv
-from azure_object_detection import AzureObjectDetector
+from ..azure_vision.azure_object_detection import AzureObjectDetector
 import matplotlib.pyplot as plt
 from math import sqrt
 
@@ -515,11 +515,26 @@ def test_enhanced_detection():
     """Test the enhanced detection on our demo blueprint"""
     detector = AdvancedBlueprintDetector()
     
-    blueprint_path = "demo_images/blueprint_with_doors.png"
-    reference_path = "demo_images/door_icon.png"
+    # Updated paths for organized structure
+    blueprint_path = "images/blueprints/blueprint_with_doors.png"
+    reference_path = "images/templates/door_icon.png"
     
     if not os.path.exists(blueprint_path):
-        print("Demo images not found. Run blueprint_icon_detector.py first to create them.")
+        print(f"Blueprint image not found: {blueprint_path}")
+        print("Available blueprints:")
+        if os.path.exists("images/blueprints"):
+            for f in os.listdir("images/blueprints"):
+                if f.endswith('.png'):
+                    print(f"  - images/blueprints/{f}")
+        return
+    
+    if not os.path.exists(reference_path):
+        print(f"Template image not found: {reference_path}")
+        print("Available templates:")
+        if os.path.exists("images/templates"):
+            for f in os.listdir("images/templates"):
+                if f.endswith('.png'):
+                    print(f"  - images/templates/{f}")
         return
     
     # Test with lower threshold to catch more doors
@@ -549,13 +564,15 @@ def test_enhanced_detection():
               f"Method: {method}{region_info} "
               f"Confidence: {match['confidence']:.3f}")
     
-    # Create visualization
-    viz_path = detector.visualize_enhanced_results(blueprint_path, results)
+    # Create visualization - save to results folder
+    output_path = f"results/images/enhanced_detection_{os.path.basename(blueprint_path)}"
+    viz_path = detector.visualize_enhanced_results(blueprint_path, results, output_path)
     
-    # Save detailed results
-    with open("ultimate_detection_results.json", 'w') as f:
+    # Save detailed results to results folder
+    results_path = "results/analysis/ultimate_detection_results.json"
+    with open(results_path, 'w') as f:
         json.dump(results, f, indent=2)
-    print(f"Detailed results saved to: ultimate_detection_results.json")
+    print(f"Detailed results saved to: {results_path}")
 
 if __name__ == "__main__":
     print("=== Enhanced Blueprint Detection Test ===\n")

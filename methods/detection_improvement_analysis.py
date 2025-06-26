@@ -17,8 +17,8 @@ import numpy as np
 import json
 from typing import List, Dict
 import time
-from blueprint_icon_detector import BlueprintIconDetector
-from advanced_blueprint_detector import AdvancedBlueprintDetector
+from methods.template_matching.blueprint_icon_detector import BlueprintIconDetector
+from methods.template_matching.advanced_blueprint_detector import AdvancedBlueprintDetector
 
 def analyze_detection_improvements():
     """
@@ -26,12 +26,12 @@ def analyze_detection_improvements():
     """
     print("=== DETECTION IMPROVEMENT ANALYSIS ===\n")
     
-    blueprint_path = "demo_images/blueprint_with_doors.png"
-    reference_path = "demo_images/door_icon.png"
+    blueprint_path = "images/blueprints/blueprint_with_doors.png"
+    reference_path = "images/templates/door_icon.png"
     
     if not os.path.exists(blueprint_path):
-        print("Demo images not found. Creating them first...")
-        from blueprint_icon_detector import create_demo_images
+        print("Creating demo images...")
+        from .template_matching.blueprint_icon_detector import create_demo_images
         create_demo_images()
     
     # Initialize detectors

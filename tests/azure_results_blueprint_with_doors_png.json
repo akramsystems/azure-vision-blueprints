@@ -1,0 +1,26 @@
+{
+  "metadata": {
+    "width": 1200,
+    "height": 800,
+    "model_version": "2023-10-01"
+  },
+  "objects": [],
+  "tags": [
+    {
+      "name": "diagram",
+      "confidence": 0.9261987209320068
+    },
+    {
+      "name": "square",
+      "confidence": 0.8498638868331909
+    },
+    {
+      "name": "plan",
+      "confidence": 0.8479601144790649
+    },
+    {
+      "name": "rectangle",
+      "confidence": 0.8461741209030151
+    }
+  ]
+}

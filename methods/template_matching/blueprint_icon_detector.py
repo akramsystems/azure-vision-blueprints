@@ -21,7 +21,7 @@ import numpy as np
 import json
 from typing import List, Dict, Tuple
 from dotenv import load_dotenv
-from azure_object_detection import AzureObjectDetector
+from ..azure_vision.azure_object_detection import AzureObjectDetector
 import matplotlib.pyplot as plt
 from PIL import Image, ImageDraw, ImageFont
 
@@ -264,10 +264,10 @@ class BlueprintIconDetector:
         return output_path
 
 def create_demo_images():
-    """
-    Create demo images for testing - a simple door icon and a comprehensive blueprint with 28 doors
-    """
-    os.makedirs("demo_images", exist_ok=True)
+    """Create demo images for testing"""
+    # Create organized directories
+    os.makedirs("images/templates", exist_ok=True)
+    os.makedirs("images/blueprints", exist_ok=True)
     
     # Create a more realistic door icon (architectural style)
     door_icon = np.ones((60, 40, 3), dtype=np.uint8) * 255  # White background
@@ -287,7 +287,7 @@ def create_demo_images():
     # Draw door swing arc (architectural convention) - very light
     cv2.ellipse(door_icon, (35, 55), (25, 25), 0, 0, 90, (180, 180, 180), 1)
     
-    cv2.imwrite("demo_images/door_icon.png", door_icon)
+    cv2.imwrite("images/templates/door_icon.png", door_icon)
     
     # Create a larger, more complex blueprint with 28 doors
     blueprint = np.ones((800, 1200, 3), dtype=np.uint8) * 255  # Larger white background
@@ -429,11 +429,11 @@ def create_demo_images():
             
             blueprint[y:y_end, x:x_end] = background_region
     
-    cv2.imwrite("demo_images/blueprint_with_doors.png", blueprint)
+    cv2.imwrite("images/blueprints/blueprint_with_doors.png", blueprint)
     
     print("Demo images created:")
-    print("- demo_images/door_icon.png (reference icon)")
-    print(f"- demo_images/blueprint_with_doors.png (blueprint with {len(door_positions)} doors)")
+    print("- images/templates/door_icon.png (reference icon)")
+    print(f"- images/blueprints/blueprint_with_doors.png (blueprint with {len(door_positions)} doors)")
     print("  Door rotations: 15-degree increments (0°, 15°, 30°, 45°... 345°) for comprehensive testing")
 
 def main():
@@ -449,8 +449,8 @@ def main():
     detector = BlueprintIconDetector()
     
     # Test detection
-    blueprint_path = "demo_images/blueprint_with_doors.png"
-    reference_path = "demo_images/door_icon.png"
+    blueprint_path = "images/blueprints/blueprint_with_doors.png"
+    reference_path = "images/templates/door_icon.png"
     
     print(f"\nAnalyzing blueprint: {blueprint_path}")
     print(f"Using reference icon: {reference_path}")
